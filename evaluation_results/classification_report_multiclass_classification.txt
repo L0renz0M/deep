@@ -1,0 +1,11 @@
+                                precision    recall  f1-score   support
+
+    Cassava___bacterial_blight     0.3230    0.7269    0.4473       216
+Cassava___brown_streak_disease     0.4486    0.4153    0.4313       431
+        Cassava___green_mottle     0.5354    0.3238    0.4036       491
+             Cassava___healthy     0.5026    0.3919    0.4404       495
+      Cassava___mosaic_disease     0.8566    0.8776    0.8670      2647
+
+                      accuracy                         0.7037      4280
+                     macro avg     0.5332    0.5471    0.5179      4280
+                  weighted avg     0.7108    0.7037    0.6994      4280

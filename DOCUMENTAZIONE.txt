@@ -1,0 +1,65 @@
+# Documentazione del Progetto DeepLearning-main
+
+## Descrizione Generale
+Questo progetto implementa un flusso completo di deep learning per la classificazione, includendo:
+- Preprocessing dei dati
+- Definizione e addestramento del modello
+- Valutazione delle performance
+- Predizione su nuovi dati
+
+I file principali sono:
+- `data_preprocessing.py`: Preprocessing e preparazione dei dati
+- `model.py`: Definizione dell'architettura del modello
+- `train.py`: Addestramento del modello e gestione dei callback
+- `evaluation.py`: Valutazione delle performance e generazione di report
+- `prediction.py`: Predizione su nuovi dati
+- `main.py`: Script principale per orchestrare il flusso
+
+## Descrizione dei File
+
+### data_preprocessing.py
+Contiene funzioni per:
+- Caricamento dei dati
+- Pulizia e normalizzazione
+- Suddivisione in training/test set
+
+### model.py
+Definisce l'architettura del modello di deep learning, ad esempio una rete neurale, e le relative funzioni di compilazione.
+
+### train.py
+Gestisce:
+- Addestramento del modello
+- Callback (es. salvataggio pesi, early stopping)
+- Logging dei risultati in `training_log.csv`
+
+### evaluation.py
+Valuta le performance del modello:
+- Calcolo di metriche (accuracy, precision, recall, F1)
+- Generazione di confusion matrix e classification report
+- Salvataggio dei risultati in `evaluation_results/`
+
+### prediction.py
+Effettua predizioni su nuovi dati utilizzando il modello addestrato.
+
+### main.py
+Script di orchestrazione che richiama le varie fasi:
+- Preprocessing
+- Addestramento
+- Valutazione
+- Predizione
+
+## Output
+- `training_log.csv`: Log dell'addestramento
+- Cartella `evaluation_results/`: Report e grafici delle valutazioni
+
+## Dipendenze
+- Python >= 3.9
+- TensorFlow/Keras o PyTorch (in base al modello)
+- pandas, numpy, matplotlib, scikit-learn
+
+## Esecuzione
+Eseguire `main.py` per avviare l'intero flusso.
+
+---
+
+Per dettagli sulle funzioni, consultare i docstring all'interno dei singoli file.
